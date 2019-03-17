@@ -9,9 +9,11 @@ $(document).ready(function () {
       NombreMaximum = 22,
       TirageEffectue = new Array();
 
-
+    $('#tarot-section').css({
+      'margin-top': '100px',
+      'padding-top': '100px'
+    })
     if ( oWindowWidth <= 640 ) {
-
       $('.detail.row').remove().clone().insertAfter('.row.row-card');
 
     }
@@ -66,7 +68,7 @@ $(document).ready(function () {
                       }
                       
                       $('#card' + Numero).attr('data-rank', Aleatoire);                     
-                      Element.innerHTML = '<a href=""> <img src="img/back-card.png" alt="card" class="back-card"> <img src="img/baraja/' + Aleatoire + '.jpg" alt="card" class="hidden-card"> </a>'
+                      Element.innerHTML = '<a href=""> <img src="img/back-card.png" alt="card" class="back-card"> <img src="img/back-card.png" alt="card" class="hidden-card"> </a>'
                       
               }
               TirageEffectue[Numero] = true;
